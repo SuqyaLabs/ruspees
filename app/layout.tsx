@@ -55,7 +55,7 @@ export const metadata: Metadata = {
       "Découvrez Ruspee's, le meilleur poulet frit d'Algérie. Un goût moderne, accessible à tous.",
     images: [
       {
-        url: "/hero.png",
+        url: "/Frame 28.png",
         width: 1200,
         height: 630,
         alt: "Ruspee's - Le meilleur poulet frit d'Algérie",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     title: "Ruspee's - Le Goût de la Qualité",
     description:
       "Découvrez Ruspee's, le meilleur poulet frit d'Algérie. Un goût moderne, accessible à tous.",
-    images: ["/hero.png"],
+    images: ["/Frame 28.png"],
   },
   alternates: {
     canonical: "https://ruspees.com",
