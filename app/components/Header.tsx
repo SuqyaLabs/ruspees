@@ -59,7 +59,7 @@ export default function Header() {
             alt="Ruspee's Logo"
             width={120}
             height={40}
-            className="h-10 w-auto transition-all duration-300 group-hover:scale-105"
+            className="md:h-10 w-auto transition-all duration-300 group-hover:scale-105"
             priority
           />
         </motion.a>
