@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChefHat } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import clsx from "clsx";
 
 const navLinks = [
@@ -42,12 +43,14 @@ export default function Header() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          <div className="text-[#ec1313] transition-transform duration-300 group-hover:rotate-12">
-            <ChefHat className="w-8 h-8" strokeWidth={2.5} />
-          </div>
-          <h2 className="text-[#1b0d0d] text-2xl font-extrabold leading-tight tracking-[-0.015em]">
-            Ruspee&apos;s
-          </h2>
+          <Image
+            src="/logo.png"
+            alt="Ruspee's Logo"
+            width={120}
+            height={40}
+            className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+            priority
+          />
         </motion.a>
 
         <nav className="hidden md:flex flex-1 justify-end gap-8 items-center">

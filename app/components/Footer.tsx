@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChefHat, Facebook, Instagram, Music } from "lucide-react";
+import { Facebook, Instagram, Music } from "lucide-react";
+import Image from "next/image";
 
 const quickLinks = [
   { href: "#", label: "Notre Menu" },
@@ -33,11 +34,14 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             className="col-span-1 md:col-span-2"
           >
-            <a href="#" className="flex items-center gap-2 mb-6 group">
-              <div className="text-[#ec1313] transition-transform duration-300 group-hover:rotate-12">
-                <ChefHat className="w-8 h-8" strokeWidth={2.5} />
-              </div>
-              <h2 className="text-white text-2xl font-bold">Ruspee&apos;s</h2>
+            <a href="#" className="inline-block mb-6 group">
+              <Image
+                src="/logo.png"
+                alt="Ruspee's Logo"
+                width={120}
+                height={40}
+                className="h-10 w-auto brightness-0 invert transition-transform duration-300 group-hover:scale-105"
+              />
             </a>
             <p className="text-gray-400 text-base leading-relaxed max-w-sm mb-6">
               Le goût authentique du poulet frit moderne. Qualité, fraîcheur et convivialité à chaque commande.
