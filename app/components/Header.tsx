@@ -44,11 +44,11 @@ export default function Header() {
           whileTap={{ scale: 0.98 }}
         >
           <Image
-            src="/logo.png"
+            src={isScrolled ? "/logo.png" : "/logo-white.png"}
             alt="Ruspee's Logo"
             width={120}
             height={40}
-            className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+            className="h-10 w-auto transition-all duration-300 group-hover:scale-105"
             priority
           />
         </motion.a>
@@ -59,7 +59,10 @@ export default function Header() {
               <motion.a
                 key={link.href}
                 href={link.href}
-                className="relative text-[#1b0d0d] text-sm font-bold hover:text-[#ec1313] transition-colors leading-normal group"
+                className={clsx(
+                  "relative text-sm font-bold hover:text-[#ec1313] transition-colors leading-normal group",
+                  isScrolled ? "text-[#1b0d0d]" : "text-white"
+                )}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -72,7 +75,7 @@ export default function Header() {
         </nav>
 
         <button
-          className="md:hidden text-[#1b0d0d] p-2"
+          className={clsx("md:hidden p-2", isScrolled ? "text-[#1b0d0d]" : "text-white")}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
