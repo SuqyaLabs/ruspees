@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ruspee's - Le Goût de la Qualité</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1313",
+                        "primary-dark": "#c40f0f",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e7cfcf; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ec1313; 
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1b0d0d] antialiased overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-[#f3e7e7] bg-[#fcf8f8]/90 backdrop-blur-md px-4 py-3 lg:px-40">
+<div class="mx-auto flex max-w-[960px] items-center justify-between">
+<div class="flex items-center gap-2 text-[#1b0d0d]">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">fastfood</span>
+</div>
+<h2 class="text-[#1b0d0d] text-2xl font-extrabold leading-tight tracking-[-0.015em]">Ruspee's</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-6">
+<a class="text-[#1b0d0d] text-sm font-bold hover:text-primary transition-colors leading-normal" href="#philosophie">A Propos</a>
+<a class="text-[#1b0d0d] text-sm font-bold hover:text-primary transition-colors leading-normal" href="#locations">Où nous trouver</a>
+<a class="text-[#1b0d0d] text-sm font-bold hover:text-primary transition-colors leading-normal" href="#contact">Nous contacter</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary-dark transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Commander</span>
+</button>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-[#1b0d0d]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<div class="relative w-full">
+<div class="layout-container flex flex-col justify-center">
+<div class="px-4 py-8 lg:px-40 lg:py-12 flex justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="@container">
+<div class="flex min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center relative overflow-hidden group shadow-lg" data-alt="Close up of a crispy fried chicken bucket and a refreshing drink with the cityscape of Algiers blurred in the background" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTkqaUXJpp1VV5vL6UYruKeN3ZmCR2QwGfYgBsdHiye20qkN8-vqoFdxGkB4zI3JSoR6jiBkgE1Ab0fgULxiLAUW0gXUG4sqgP7TxkcKq5153JRMe4g_DWEUqYNgpolaM9u2tQKckzXg0IYghdOBW-eFMlh8xeCvAt_LR-RiB__1k5QpMjQGRQOYR3EdEiQF3boKJdJi-z3LZaI5VW4ivelQl8juU0Dgs0QkBk-Sj9rt0s0hoqXVH4aBW-hh-yv5L9-08MxG15BNw");'>
+<div class="z-10 flex flex-col gap-4 items-center max-w-2xl">
+<h1 class="text-white text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em] drop-shadow-md">
+                                    Le Goût de la Qualité
+                                </h1>
+<h2 class="text-gray-100 text-lg md:text-xl font-medium leading-relaxed max-w-lg mx-auto">
+                                    Un goût moderne, accessible à tous. Découvrez l'expérience Ruspee's.
+                                </h2>
+<div class="flex gap-4 mt-4">
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-primary-dark transition-all transform hover:scale-105 text-white text-base font-bold tracking-[0.015em] shadow-lg">
+                                        Voir le menu
+                                    </button>
+</div>
+</div>
+<!-- Slider Indicators (Visual Only) -->
+<div class="absolute bottom-6 flex gap-2 z-10">
+<div class="w-8 h-1.5 bg-primary rounded-full"></div>
+<div class="w-2 h-1.5 bg-white/50 rounded-full"></div>
+<div class="w-2 h-1.5 bg-white/50 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pillars Section -->
+<div class="relative w-full bg-[#fcf8f8]">
+<div class="px-4 py-16 lg:px-40 flex justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-12">
+<div class="text-center md:text-left flex flex-col gap-4">
+<h1 class="text-[#1b0d0d] text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">
+                        Nos Piliers
+                    </h1>
+<p class="text-[#5c4040] text-lg font-medium leading-normal max-w-[720px]">
+                        Découvrez ce qui fait la différence chez Ruspee's. Trois mots, une promesse.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#e7cfcf] bg-white p-8 hover:shadow-lg transition-shadow group">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">local_fire_department</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-[#1b0d0d] text-xl font-bold leading-tight uppercase tracking-wider">CROUSTY</h2>
+<p class="text-[#5c4040] text-base leading-relaxed">Une panure secrète, dorée et croustillante à souhait qui réveille vos sens.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#e7cfcf] bg-white p-8 hover:shadow-lg transition-shadow group">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">outdoor_grill</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-[#1b0d0d] text-xl font-bold leading-tight uppercase tracking-wider">ROSTY</h2>
+<p class="text-[#5c4040] text-base leading-relaxed">Une cuisson rôtie maîtrisée pour une viande tendre et juteuse à l'intérieur.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-4 rounded-xl border border-[#e7cfcf] bg-white p-8 hover:shadow-lg transition-shadow group">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">favorite</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-[#1b0d0d] text-xl font-bold leading-tight uppercase tracking-wider">TASTY</h2>
+<p class="text-[#5c4040] text-base leading-relaxed">Une explosion de saveurs authentiques grâce à nos épices de qualité.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Philosophy Section -->
+<div class="relative w-full bg-white" id="philosophie">
+<div class="px-4 py-16 lg:px-40 flex justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-12">
+<div class="flex flex-col gap-4">
+<h1 class="text-[#1b0d0d] text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">
+                        Notre Philosophie
+                    </h1>
+<p class="text-[#5c4040] text-lg font-medium leading-normal max-w-[720px]">
+                        Une sélection rigoureuse d'ingrédients et des techniques de cuisson modernes pour vous offrir le meilleur.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl shadow-sm" data-alt="Fresh raw ingredients including high quality chicken meat and vegetables on a prep table" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDolWiYb1-V63EkneHxfNbQHjsY-P-ifqylDnNIP3PQm7T0kf-rKlvHHQcj_2c71wNihUgpsDLvgB11dwb_DPn3zhMa8S3GllQvuj05cDfNBmlXSn30wcD_QMGyp0GUbixvIpC9_fGQZ5r_3BJNbPCODtM0rdXTM9iv3hrekh1YgjMUah_3qMfXaqTFqjWVTKOe3yCh1uS9jeyOhJ0zra5p4TZDKAnE0Zf5Upj0jAp33nfTKTZ11rAN8nC6QbEXkzmM1yr9nAsf_V0");'></div>
+<div class="p-2">
+<p class="text-[#1b0d0d] text-xl font-bold leading-normal mb-2">Ingrédients Frais</p>
+<p class="text-[#5c4040] text-base font-normal leading-relaxed">
+                                Nous sélectionnons scrupuleusement nos volailles auprès de producteurs locaux de confiance. La fraîcheur est notre priorité absolue, garantissant une texture et un goût incomparables à chaque bouchée.
+                            </p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl shadow-sm" data-alt="Professional chef preparing fried chicken in a modern commercial kitchen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-zylZkgC3sDNpmmnYBRf851rloFFylsgLgjGRtOj5uZvfFVtBiMcx7QZoHMzztqIOTsj_0eKoAAY4W6UFJggLxYt6D-4O7tDYUQaoGmJHWmPlBk7WjIg_zK4EuIoIljDSiMZQSHDoM3F6JmGZtiAQN-ovUjGNoFchqKaX5Q2X9NkJGkfM5WftwEPMag6WqsriBXLnRQ8x3djuUxNU0cTE2XcRenYIPxVW6OCfRevSHR_8fS-CjOgVvnZqs93rwYqmWW1vf5Nn7CQ");'></div>
+<div class="p-2">
+<p class="text-[#1b0d0d] text-xl font-bold leading-normal mb-2">Technique Maîtrisée</p>
+<p class="text-[#5c4040] text-base font-normal leading-relaxed">
+                                Nos chefs utilisent des équipements de pointe et des méthodes de cuisson précises. Température, temps de cuisson, assaisonnement : rien n'est laissé au hasard pour obtenir le croustillant parfait.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Locations Section -->
+<div class="relative w-full bg-[#f8f6f6] border-t border-[#f3e7e7]" id="locations">
+<div class="px-4 py-16 lg:px-40 flex justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="mb-10 text-center">
+<h2 class="text-[#1b0d0d] text-3xl md:text-4xl font-black leading-tight tracking-[-0.015em] mb-4">Nos Restaurants</h2>
+<p class="text-[#5c4040] text-lg">Retrouvez-nous à Alger et venez déguster nos spécialités.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Location Card 1: Ain Allah -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-[#e7cfcf] flex flex-col">
+<div class="h-48 bg-cover bg-center" data-alt="Map view showing the location of the Ain Allah restaurant" data-location="Ain Allah" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGqR9c4SSTml-dzbBUGUeBzePoregBX76OHj_Wmrg21J1nJRRz0PnhMFL_xqY4zBMDZuHF6cIvwY__QRgVkAbUe_PJJAPeHj9kPgfi5KX1EfmHl_WptwSRrqL5nF__u5qmDFTn0bGgTCBVgH-ope1CGW0uPAgXVqXl2AXODVFieLqr4U7jRm_ftmoY-qLhoUUJekmLH1TDdcwS7xWqmMB4TqTXWwFTl67eR9won6wL16Q19TB9fN0gsZfmDsao0dxjO5iQurUEPB4");'>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-start justify-between mb-4">
+<div>
+<h3 class="text-xl font-bold text-[#1b0d0d]">Ain Allah</h3>
+<p class="text-[#5c4040] text-sm mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-base">location_on</span>
+                                        Cité 450 Logements, Dely Ibrahim
+                                    </p>
+</div>
+<span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded">OUVERT</span>
+</div>
+<div class="mb-6 space-y-2">
+<div class="flex items-center gap-2 text-sm text-[#5c4040]">
+<span class="material-symbols-outlined text-base">schedule</span>
+<span>11:00 - 23:00 (Tous les jours)</span>
+</div>
+<div class="flex items-center gap-2 text-sm text-[#5c4040]">
+<span class="material-symbols-outlined text-base">call</span>
+<span>+213 555 12 34 56</span>
+</div>
+</div>
+<button class="mt-auto w-full flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary/10 hover:bg-primary hover:text-white transition-all text-primary font-bold text-sm">
+<span class="material-symbols-outlined text-lg">directions</span>
+                                OBTENIR UN ITINÉRAIRE
+                            </button>
+</div>
+</div>
+<!-- Location Card 2: Draria -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-[#e7cfcf] flex flex-col">
+<div class="h-48 bg-cover bg-center" data-alt="Map view showing the location of the Draria restaurant" data-location="Draria" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC8XUv7QqVGUsciLv7pdds9z29Nu8TU08l-hjHmdj-Yo8z3KC2ssru7_cSZMgxGAxiRG2SWxLMlftUU9E74a_-lbUDFdx-nLdBWnMBwLS0nqTbX1NVWgBScTuFRgehdNZTv5havRCtWVMBdYO9_F2UM4YaCidCbFrXahiqhXaAkIgUr6k4n2up5oPk2i_ZA5ihm9jjeBPMSS8Sl9MDN1Dlhs6wuhKWeFiI9ib2a84GzbpyF3HWHrp8N_UZl2D2eZhDy8jLP7592tYc");'>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-start justify-between mb-4">
+<div>
+<h3 class="text-xl font-bold text-[#1b0d0d]">Draria</h3>
+<p class="text-[#5c4040] text-sm mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-base">location_on</span>
+                                        Boulevard Principal, Draria Centre
+                                    </p>
+</div>
+<span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded">OUVERT</span>
+</div>
+<div class="mb-6 space-y-2">
+<div class="flex items-center gap-2 text-sm text-[#5c4040]">
+<span class="material-symbols-outlined text-base">schedule</span>
+<span>11:00 - 23:30 (Tous les jours)</span>
+</div>
+<div class="flex items-center gap-2 text-sm text-[#5c4040]">
+<span class="material-symbols-outlined text-base">call</span>
+<span>+213 555 98 76 54</span>
+</div>
+</div>
+<button class="mt-auto w-full flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary/10 hover:bg-primary hover:text-white transition-all text-primary font-bold text-sm">
+<span class="material-symbols-outlined text-lg">directions</span>
+                                OBTENIR UN ITINÉRAIRE
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-[#1b0d0d] text-white py-12 px-4 border-t border-primary/20" id="contact">
+<div class="max-w-[960px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 mb-4 text-primary">
+<span class="material-symbols-outlined text-3xl">fastfood</span>
+<h2 class="text-white text-2xl font-bold">Ruspee's</h2>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+                    Le goût authentique du poulet frit moderne. Qualité, fraîcheur et convivialité à chaque commande.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4">Liens Rapides</h4>
+<ul class="space-y-2 text-gray-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Notre Menu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#locations">Nos Restaurants</a></li>
+<li><a class="hover:text-primary transition-colors" href="#philosophie">A Propos</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Carrières</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4">Suivez-nous</h4>
+<div class="flex gap-4">
+<a aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<!-- Using material symbol as placeholder for social icons -->
+<span class="material-symbols-outlined text-xl">thumb_up</span>
+</a>
+<a aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">photo_camera</span>
+</a>
+<a aria-label="TikTok" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">music_note</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-[960px] mx-auto mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+<p>© 2023 Ruspee's Algérie. Tous droits réservés.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<a class="hover:text-white" href="#">Mentions Légales</a>
+<a class="hover:text-white" href="#">Politique de Confidentialité</a>
+</div>
+</div>
+</footer>
+</body></html>
