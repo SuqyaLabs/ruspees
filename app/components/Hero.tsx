@@ -84,14 +84,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-col sm:flex-row gap-4"
         >
-          <motion.button
-            className="group flex items-center justify-center gap-2 rounded-xl h-14 px-10 bg-[#ec1313] hover:bg-[#c40f0f] text-white text-lg font-bold tracking-wide shadow-2xl shadow-[#ec1313]/30 transition-all duration-300"
+          <motion.a
+            href="#locations"
+            className="inline-flex items-center justify-center gap-2 rounded-xl h-14 px-10 bg-[#ec1313] hover:bg-[#c40f0f] text-white text-lg font-bold tracking-wide shadow-2xl shadow-[#ec1313]/30 transition-all duration-300"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
-            Voir le menu
+            Nos restaurants
             <motion.span
               className="inline-block"
               animate={{ x: [0, 4, 0] }}
@@ -99,14 +99,7 @@ export default function Hero() {
             >
               →
             </motion.span>
-          </motion.button>
-          <motion.button
-            className="flex items-center justify-center gap-2 rounded-xl h-14 px-10 bg-white/10 backdrop-blur-sm border border-white/30 hover:bg-white/20 text-white text-lg font-bold tracking-wide transition-all duration-300"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Nos restaurants
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         <motion.div

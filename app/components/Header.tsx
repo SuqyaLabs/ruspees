@@ -66,13 +66,6 @@ export default function Header() {
               </motion.a>
             ))}
           </div>
-          <motion.button
-            className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-[#ec1313] hover:bg-[#c40f0f] transition-all text-white text-sm font-bold leading-normal tracking-[0.015em] shadow-lg hover:shadow-xl"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <span className="truncate">Commander</span>
-          </motion.button>
         </nav>
 
         <button
@@ -106,14 +99,6 @@ export default function Header() {
                   {link.label}
                 </motion.a>
               ))}
-              <motion.button
-                className="w-full flex items-center justify-center rounded-lg h-12 px-6 bg-[#ec1313] hover:bg-[#c40f0f] transition-all text-white text-base font-bold shadow-lg"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-              >
-                Commander
-              </motion.button>
             </nav>
           </motion.div>
         )}
